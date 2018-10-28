@@ -1,0 +1,4 @@
+/build
+/digole.egg-info
+/dist
+**/__pycache__
