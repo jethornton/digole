@@ -4,6 +4,8 @@ Tested with Digole 160x128 Color LCD 1.8" DSDM/Serial
 
 Raspberry Pi 3 B using the i2c bus
 
+Examples at www.github.com/jethornton/digole
+
 Installing ``` pip3 install digole ```
 
 Upgrade ``` pip3 install digole --upgrade ```
@@ -24,3 +26,21 @@ change XY start position of the text from the top left corner in columns, rows
 ```s.changePosition(x,y)
 
 s.changePosition(0,2) # start the text on column 0 row 2```
+
+Change Foreground Color color value 0-255 ```s.changeForeColor(color)```
+Black = 0 0x0
+Navy = 2 0x2
+Blue = 3 0x3
+Green = 24 0x18
+Teal = 27 0x1B
+Lime = 28 0x1C
+Aqua = 31 0x1F
+Maroon = 192 0xC0
+Purple = 195 0xC3
+Olive = 219 0xDB
+Magenta = 227 0xE3
+Yellow = 252 0xFC
+White = 255 0xFF
+
+
+

@@ -55,9 +55,13 @@ class lcd(object):
 
 
 	def setForeColor(self, color=None):
-		if not color:
+		if not color: # set to white
 			color = 255
-		self.i2c.write_block_data(self._address, 0x00, color)
+		self.i2c.write_block_data(self._address, 0x00, [0x53, 0x43, color])
 
+	def setBackColor(self, color=None):
+		if not color: # set to black
+			color = 0
+		self.i2c.write_block_data(self._address, 0x00, [0x42, 0x47, 0x43, color])
 
 
