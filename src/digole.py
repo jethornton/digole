@@ -53,3 +53,11 @@ class lcd(object):
 		s = [ord(i) for i in text]
 		self.i2c.write_block_data(self._address, 0x00, s)
 
+
+	def setForeColor(self, color=None):
+		if not color:
+			color = 255
+		self.i2c.write_block_data(self._address, 0x00, color)
+
+
+
