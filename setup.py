@@ -5,13 +5,12 @@ with open("README.md", "r") as fh:
 
 setup(
     name="digole",
-    version="0.0.1.26",
+    version="0.0.1.29",
     author="John Thornton",
     author_email="bjt128@gmail.com",
     license="MIT License",
     description="Digole LCD Drivers",
     long_description=long_description,
-    long_description_content_type="text/markdown",
     url="https://github.com/jethornton/digole",
     packages=find_packages('src'),
     package_dir={'':'src'},

@@ -9,6 +9,9 @@ class lcd(object):
 		else:
 			self.address = address
 		self.i2c = smbus.SMBus(1)
+		self.namedColors = {'black':0 , 'navy':2 , 'blue':3 , 'green':24 ,
+		'teal':27 , 'lime':28 , 'aqua':31 , 'maroon':192 , 'purple':195 ,
+		'olive':219 , 'red':224 , 'magenta':227 , 'yellow':252 , 'white':255}
 
 	@property
 	def address(self):
@@ -56,8 +59,13 @@ class lcd(object):
 
 	def setForeColor(self, color=None):
 		if not color: # set to white
-			color = 255
-		self.i2c.write_block_data(self._address, 0x00, [0x53, 0x43, color])
+			value = 255
+		else:
+			try:
+				value = int(color)
+			except ValueError:
+				value = self.namedColors.get(color.lower())
+		self.i2c.write_block_data(self._address, 0x00, [0x53, 0x43, value])
 
 	def setBackColor(self, color=None):
 		if not color: # set to black
