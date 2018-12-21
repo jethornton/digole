@@ -15,26 +15,26 @@ class lcd(object):
 
 	@property
 	def address(self):
-		print('called getter')
-		print('address is {0:#x}'.format(self._address))
+		#print('called getter')
+		#print('address is {0:#x}'.format(self._address))
 		return self._address
 
 	@address.setter
 	def address(self, value):
-		print('called setter')
-		print('setting the address to {0:#x}'.format(value))
+		$print('called setter')
+		$print('setting the address to {0:#x}'.format(value))
 		self._address = value
 
 	@address.deleter
 	def address(self):
-		print('called deleter')
-		print('Deleting...')
+		#print('called deleter')
+		#print('Deleting...')
 		del self._address
 
 
 	def convert(self, text=None):
 		if text == None:
-			print('No text string passed')
+			#print('No text string passed')
 			return -1
 		else:
 			return [ord(i) for i in text]
