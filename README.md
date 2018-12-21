@@ -30,20 +30,20 @@ change XY start position of the text from the top left corner in columns, rows
 Change Foreground Color color value 0-255 ```s.changeForeColor(color)```
 color can be an int 0-255, a hex 0x0-0x255 or a color name from the chart.
 
-Black   =   0 = 0x0
-Navy    =   2 = 0x2
-Blue    =   3 = 0x3
-Green   =  24 = 0x18
-Teal    =  27 = 0x1B
-Lime    =  28 = 0x1C
-Aqua    =  31 = 0x1F
-Maroon  = 192 = 0xC0
-Purple  = 195 = 0xC3
-Olive   = 219 = 0xDB
-Red     = 224 = 0xE0
-Magenta = 227 = 0xE3
-Yellow  = 252 = 0xFC
-White   = 255 = 0xFF
+	Black   =   0 = 0x0
+	Navy    =   2 = 0x2
+	Blue    =   3 = 0x3
+	Green   =  24 = 0x18
+	Teal    =  27 = 0x1B
+	Lime    =  28 = 0x1C
+	Aqua    =  31 = 0x1F
+	Maroon  = 192 = 0xC0
+	Purple  = 195 = 0xC3
+	Olive   = 219 = 0xDB
+	Red     = 224 = 0xE0
+	Magenta = 227 = 0xE3
+	Yellow  = 252 = 0xFC
+	White   = 255 = 0xFF
 
 
 
