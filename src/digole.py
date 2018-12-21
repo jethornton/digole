@@ -21,8 +21,8 @@ class lcd(object):
 
 	@address.setter
 	def address(self, value):
-		$print('called setter')
-		$print('setting the address to {0:#x}'.format(value))
+		#print('called setter')
+		#$print('setting the address to {0:#x}'.format(value))
 		self._address = value
 
 	@address.deleter

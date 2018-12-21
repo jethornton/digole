@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="digole",
-    version="0.0.2",
+    version="0.0.3",
     author="John Thornton",
     author_email="bjt128@gmail.com",
     license="MIT License",
